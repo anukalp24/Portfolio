@@ -1,0 +1,222 @@
+.nav {
+  border: 1px solid rgb(255, 255, 255);
+  height: 6vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 18vw;
+  text-align: center;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+  margin-top: 4.4vh;
+}
+
+.nav:hover {
+  transform: scale(1.1);
+  border: 1px solid rgb(119, 9, 122);
+}
+#parent-nav{
+/* border: 1px solid white; */
+  flex-direction: column;
+  display: flex;
+ 
+  align-items: center;
+  height: 100vh;
+    background-color: black;
+
+  background-image: radial-gradient(rgb(189, 117, 196) 1px, transparent 1px);
+  background-size: 50px 50px;
+
+}
+#home {
+  height: 4vh;
+   transition: transform 0.4s ease;
+   cursor: pointer;
+   color: white;
+}
+
+#home:hover{
+  color: purple;
+    transform: translateY(-5px);
+}
+
+#bulb {
+  height: 4vh;
+ color: white;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  
+
+
+}
+
+#bulb:hover{
+    transform: translateY(-5px);
+    color: purple;
+}
+
+#projects {
+  height: 3vh;
+  transition: transform 0.4s ease;
+  color: white;
+  cursor: pointer;
+}
+
+#projects:hover{
+      transform: translateY(-5px);
+       color: purple;
+}
+
+#phone {
+  height: 3vh;
+   transition: transform 0.4s ease;
+   cursor: pointer;
+   color: white;
+}
+
+#phone:hover{
+    transform: translateY(-5px);
+     color: purple;
+}
+
+h1{
+  color: white;
+}
+
+
+#name{
+  font-size: 72px;
+}
+
+#info{
+  color: white;
+  font-size: 24px;
+}
+
+#extra-info{
+  color: white;
+  font-size: 20px;
+}
+
+
+
+#j{
+  color: white;
+}
+
+
+
+#insta{
+  padding: 6px;
+  height: 5vh;
+  color: rgb(255, 255, 255);
+   border: 1px solid white;
+}
+
+#linkedin{
+  padding: 6px;
+height: 5vh;
+  color: rgb(255, 255, 255);
+   border: 1px solid white;
+}
+
+#twitter{
+  padding: 6px;
+  border: 1px solid white;
+  height: 5vh;
+   color: rgb(255, 255, 255);
+}
+
+
+.social-links{
+ 
+  
+  display: flex;
+  flex-direction: column;
+  
+  height: 16vh;
+  justify-content: center;
+align-items: center;
+  gap: 20px;
+}
+  
+  
+  
+
+
+
+.links-except-github{
+  display: flex;
+  justify-content: center;
+  
+
+  gap: 10px;
+}
+
+#github{
+  height: 4vh;
+  color: white;
+  margin-left: 20px;
+}
+
+
+
+#github-a{
+  display: flex;
+
+  align-items: center;
+  gap: 20px;
+  
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgb(153, 86, 117);
+  display: flex;
+  width: 12vw;
+  border-radius: 20px;
+  height: 6vh;
+ 
+  align-items: center;
+   transition: background-Color 0.4s ease , transform 0.3s ease;
+
+  
+}
+
+#github-a:hover{
+  background-color: rgba(153, 86, 196, 1);
+
+} 
+  
+  .content-parent{
+    /* border: 1px solid rgb(255, 255, 255); */
+    width: 42vw;
+    margin-top: 5vh;
+    /* margin-left: 10vw; */
+    text-align: center;
+  }
+  .animation-sec{
+    /* border: 1px solid pink; */
+    /* margin-left: 10vw; */
+   height: 57vh;
+    margin-top: 5vh;
+    width: 42vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .intro-section{
+    /* border: 1px solid rgb(170, 27, 27); */
+    height: 70vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  
+    margin-top: 11vh;
+    display: flex;
+  }
+
+
