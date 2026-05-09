@@ -1,0 +1,72 @@
+<!-- 
+import "./Contact.css";
+import React , {useState} from "react";
+
+
+const Contact = () => {
+const [formData, setformData] = useState({
+  name: "",
+  email: "",
+  message: ""
+})
+const [errors, seterrors] = useState({
+
+})
+
+const handlechange = (e)=>{
+  setformData({
+    ...formData,[e.target.name]: e.target.value
+  })
+  seterrors({})
+}
+
+
+
+const handleSubmit = (e)=>{
+e.preventDefault()
+
+if(formData.name === ""){
+  seterrors({fame: "Name is required"})
+}
+// return
+
+if(formData.email === ""){
+seterrors({email: "Email is required"})
+}
+
+}
+
+  return (
+    <div>
+      <div className="parent-container">
+        <div className="form-content">
+          <div className="intro-info">               
+            <h1 id="sec1">Lets connect & build together!</h1>
+            <h3 id="sec2">Fill the form to contact!</h3>
+          </div>{" "}
+          {/* intro info div */}
+          <div className="form-info">
+            <h2 id="send">Send me a message!</h2>
+            <h3 id="long-info">
+              Got a question or proposal, or just want to say hello? Go ahead.
+            </h3>
+          </div>
+          {/* form info div */}
+        </div>{" "}
+        {/* form-content */}
+        <div className="login-page">
+          <h2 id="contact-info">Name</h2>
+          <input name="name" value={formData.name} onChange={handlechange} id="name2" type="text" placeholder="Enter your name" />
+          {errors.fame & -->
+
+
+
+
+
+
+
+
+
+
+          <!-- easy way to do it  -->
+          <!-- but i will try the compact way also -->

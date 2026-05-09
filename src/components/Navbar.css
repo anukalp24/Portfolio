@@ -1,222 +1,324 @@
+#home {
+  height: 4vh;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+#home:hover {
+  transform: translateY(-5px);
+}
+
+#bulb {
+  height: 4vh;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+#bulb:hover {
+  transform: translateY(-5px);
+}
+
+#projects {
+  height: 3vh;
+  transition: transform 0.4s ease;
+
+  cursor: pointer;
+}
+
+#projects:hover {
+  transform: translateY(-5px);
+}
+
+#phone {
+  height: 3vh;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+#phone:hover {
+  transform: translateY(-5px);
+}
+
+#insta {
+  padding: 6px;
+  height: 4vh;
+  border-radius: 7px;
+  color: #00f5d4;
+}
+
+#linkedin {
+  padding: 6px;
+  height: 4vh;
+  border-radius: 7px;
+  color: #00f5d4;
+}
+
+#twitter {
+  color: #00f5d4;
+  border-radius: 12px;
+  padding: 6px;
+  height: 4vh;
+  border-radius: 7px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.links-except-github {
+  display: flex;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+#github-logo {
+  height: 4vh;
+}
+
+.github {
+  background: linear-gradient(135deg, #00f5d4, #5f2abd);
+  border-radius: 20px;
+  transition:
+    background-Color 0.4s ease,
+    transform 0.3s ease;
+  padding: 10px;
+  
+
+}
+
+#github-a {
+  border-radius: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  margin-top: 22vh;
+  width: 90%;
+  display: flex;
+}
+.content-parent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+  padding: 30px;
+}
+.animation-sec {
+  width: 50%;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.parent-box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 11vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
 .nav {
-  border: 1px solid rgb(255, 255, 255);
+  color: white;
   height: 6vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 18vw;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 12px;
   transition: transform 0.4s ease;
-  margin-top: 4.4vh;
+
+  border-radius: 12px;
+  background:
+    linear-gradient(#000000, #000000) padding-box,
+    linear-gradient(135deg, #00f5d4, #5f2abd) border-box;
+  border: 2px solid transparent;
+}
+body {
+  margin: 0;
 }
 
-.nav:hover {
-  transform: scale(1.1);
-  border: 1px solid rgb(119, 9, 122);
-}
-#parent-nav{
-/* border: 1px solid white; */
-  flex-direction: column;
-  display: flex;
- 
-  align-items: center;
-  height: 100vh;
-    background-color: black;
-
-  background-image: radial-gradient(rgb(189, 117, 196) 1px, transparent 1px);
-  background-size: 50px 50px;
-
-}
-#home {
-  height: 4vh;
-   transition: transform 0.4s ease;
-   cursor: pointer;
-   color: white;
-}
-
-#home:hover{
-  color: purple;
-    transform: translateY(-5px);
-}
-
-#bulb {
-  height: 4vh;
- color: white;
-  transition: transform 0.4s ease;
-  cursor: pointer;
-  
-
-
-}
-
-#bulb:hover{
-    transform: translateY(-5px);
-    color: purple;
-}
-
-#projects {
-  height: 3vh;
-  transition: transform 0.4s ease;
+#name {
   color: white;
-  cursor: pointer;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 32px;
 }
 
-#projects:hover{
-      transform: translateY(-5px);
-       color: purple;
-}
-
-#phone {
-  height: 3vh;
-   transition: transform 0.4s ease;
-   cursor: pointer;
-   color: white;
-}
-
-#phone:hover{
-    transform: translateY(-5px);
-     color: purple;
-}
-
-h1{
+#info {
   color: white;
-}
-
-
-#name{
-  font-size: 72px;
-}
-
-#info{
-  color: white;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 24px;
 }
 
-#extra-info{
-  color: white;
-  font-size: 20px;
-}
-
-
-
-#j{
-  color: white;
-}
-
-
-
-#insta{
-  padding: 6px;
-  height: 5vh;
-  color: rgb(255, 255, 255);
-   border: 1px solid white;
-}
-
-#linkedin{
-  padding: 6px;
-height: 5vh;
-  color: rgb(255, 255, 255);
-   border: 1px solid white;
-}
-
-#twitter{
-  padding: 6px;
-  border: 1px solid white;
-  height: 5vh;
-   color: rgb(255, 255, 255);
-}
-
-
-.social-links{
- 
-  
-  display: flex;
+#parent-nav {
+  height: 100vh;
   flex-direction: column;
-  
-  height: 16vh;
-  justify-content: center;
-align-items: center;
-  gap: 20px;
-}
-  
-  
-  
-
-
-
-.links-except-github{
   display: flex;
-  justify-content: center;
-  
-
-  gap: 10px;
-}
-
-#github{
-  height: 4vh;
-  color: white;
-  margin-left: 20px;
-}
-
-
-
-#github-a{
-  display: flex;
-
   align-items: center;
-  gap: 20px;
-  
-  font-size: 22px;
-  color: white;
-  text-decoration: none;
-  border: 1px solid rgb(153, 86, 117);
-  display: flex;
-  width: 12vw;
-  border-radius: 20px;
-  height: 6vh;
- 
-  align-items: center;
-   transition: background-Color 0.4s ease , transform 0.3s ease;
+  background-image: radial-gradient(rgb(91, 139, 167) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+#title-info {
+  background: linear-gradient(135deg, #00f5d4, #5f2abd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 62px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  width: 22ch;
+  border-right: 1px solid rgb(255, 255, 255);
+
+  animation:
+    typing 6s steps(22) infinite,
+    blinking 0.7s infinite;
+}
+
+/* typing  */
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+
+  30% {
+    width: 16ch;
+  }
+  70% {
+    width: 16ch;
+  }
+
+  100% {
+    width: 0ch;
+  }
+}
+
+/* cursor */
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  @media (max-width: 768px) {
+    @keyframes typing {
+      0% {
+        width: 0ch;
+      }
+
+      30% {
+        width: 16ch;
+      } /* 🔥 reduce this */
+      70% {
+        width: 16ch;
+      }
+
+      100% {
+        width: 0ch;
+      }
+    }
+  }
+
+  #title-info {
+    font-size: 30px;
+  }
+
+  #name {
+    font-size: 32px;
+  }
+
+  #info {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #parent-nav {
+    height: fit-content;
+  }
+
+  .nav {
+    width: 50vw;
+  }
+
+  .parent-box {
+    width: 100%;
+  }
+
+  #name {
+    font-size: 50px;
+  }
+
+  #github-a {
+    width: 30vw;
+  }
+
+  .content-parent {
+    width: 100%;
+  }
+  .animation-sec {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .animation-sec {
+    display: none;
+  }
 
   
 }
-
-#github-a:hover{
-  background-color: rgba(153, 86, 196, 1);
-
-} 
-  
-  .content-parent{
-    /* border: 1px solid rgb(255, 255, 255); */
-    width: 42vw;
-    margin-top: 5vh;
-    /* margin-left: 10vw; */
-    text-align: center;
-  }
-  .animation-sec{
-    /* border: 1px solid pink; */
-    /* margin-left: 10vw; */
-   height: 57vh;
-    margin-top: 5vh;
-    width: 42vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .intro-section{
-    /* border: 1px solid rgb(170, 27, 27); */
-    height: 70vh;
-    width: 98vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  
-    margin-top: 11vh;
-    display: flex;
-  }
-
-
