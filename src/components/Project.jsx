@@ -4,7 +4,7 @@ import spendify from "../assets/spendify.png"
 import meteora from "../assets/meteora.png"
 
 import spendifyMobile from "../assets/spendifyMobile.png"
-import meteoraMobile from "../assets/meteoraMobile.png"
+import meteoraMobile from "../assets/MeteoraMobile.png"
 const Project = () => {
   return (
     <div>
