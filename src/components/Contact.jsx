@@ -10,9 +10,11 @@ const [formData, setformData] = useState({
   email: "",
   message: ""
 })
-const [errors, seterrors] = useState({
+const [errors, seterrors] = useState({})
 
-})
+const [message, setmessage] = useState("")
+const [loader, setloader] = useState(false)
+
 
 const handlechange = (e)=>{
   setformData({
@@ -26,6 +28,7 @@ const handlechange = (e)=>{
 
    
 const handleSubmit = (e)=>{
+  setloader(true)
   const emailpattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 e.preventDefault()
 
@@ -67,7 +70,7 @@ if(Object.keys(newErrors).length === 0){
     "psqELKAWxq4KOiuWA"
   )
   .then(() => {
-    alert("Message sent successfully!");
+setmessage("message sent successfully")
 
     setformData({
       name: "",
@@ -108,9 +111,20 @@ if(Object.keys(newErrors).length === 0){
           <div className="message-parent">
             <input name="message"  value={formData.message} onChange={handlechange} id="message" type="text" placeholder="Enter your message" /> 
             {errors.message && <p id= "error">{errors.message}</p> }
-            <button onClick={handleSubmit} id="shoot">Shoot!</button>
+            <button onClick={handleSubmit} id="shoot">{loader ? (
+              <>
+              <div className="loader"></div>
+              </>
+            ) : (
+
+              <>
+              Shoot!
+              </>
+            )}</button>
+            
           </div>{" "}
-          {/* message parent div */}
+             {message && <p className="success-message">{message}</p>}
+  
           <div className="seperation-2"></div>
         </div>{" "}
         {/* login page div */}
