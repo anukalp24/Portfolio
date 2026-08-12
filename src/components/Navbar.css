@@ -1,326 +1,742 @@
-#home {
-  height: 4vh;
-  transition: transform 0.4s ease;
-  cursor: pointer;
+/* =========================================
+GLOBAL
+========================================= */
+
+* {
+  box-sizing: border-box;
 }
 
-#home:hover {
-  transform: translateY(-5px);
+body {
+  margin: 0;
+  background: #000;
+  color: white;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
-#bulb {
-  height: 4vh;
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
+/* =========================================
+MAIN HERO
+========================================= */
 
-#bulb:hover {
-  transform: translateY(-5px);
-}
+#parent-nav {
+  min-height: 100vh;
 
-#projects {
-  height: 3vh;
-  transition: transform 0.4s ease;
-
-  cursor: pointer;
-}
-
-#projects:hover {
-  transform: translateY(-5px);
-}
-
-#phone {
-  height: 3vh;
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
-
-#phone:hover {
-  transform: translateY(-5px);
-}
-
-#insta {
-  padding: 6px;
-  height: 4vh;
-  border-radius: 7px;
-  color: #00f5d4;
-}
-
-#linkedin {
-  padding: 6px;
-  height: 4vh;
-  border-radius: 7px;
-  color: #00f5d4;
-}
-
-#twitter {
-  color: #00f5d4;
-  border-radius: 12px;
-  padding: 6px;
-  height: 4vh;
-  border-radius: 7px;
-}
-
-.social-links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+
+  background-color: #000;
+
+  background-image:
+    radial-gradient(
+      rgba(91, 139, 167, 0.7) 1px,
+      transparent 1px
+    );
+
+  background-size: 50px 50px;
+
+  position: relative;
 }
 
-.links-except-github {
-  display: flex;
-  justify-content: center;
-
-  gap: 10px;
-}
-
-#github-logo {
-  height: 4vh;
-}
-
-.github {
-  background: linear-gradient(135deg, #00f5d4, #5f2abd);
-  border-radius: 20px;
-  transition:
-    background-Color 0.4s ease,
-    transform 0.3s ease;
-padding: 0.6rem 2.0rem;
-  
-
-}
-
-#github-a {
-  border-radius: 20px;
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 22px;
-}
-
-.intro-section {
-  display: flex;
-  align-items: center;
-  margin-top: 22vh;
-  width: 90%;
-  display: flex;
-}
-.content-parent {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 20px;
-  padding: 30px;
-}
-.animation-sec {
-  width: 50%;
-  margin-top: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-}
+/* =========================================
+NAVBAR
+========================================= */
 
 .parent-box {
-  width: 50%;
+  width: 100%;
+  height: 90px;
+
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 11vh;
+  align-items: center;
+
   position: fixed;
   top: 0;
+  left: 0;
+
   z-index: 1000;
 }
 
 .nav {
-  color: white;
-  height: 6vh;
+  width: 265px;
+  height: 46px;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 18vw;
-  text-align: center;
-  border-radius: 12px;
-  transition: transform 0.4s ease;
+
+  color: white;
 
   border-radius: 12px;
+
   background:
-    linear-gradient(#000000, #000000) padding-box,
-    linear-gradient(135deg, #00f5d4, #5f2abd) border-box;
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(
+      135deg,
+      #00f5d4,
+      #5f2abd
+    ) border-box;
+
   border: 2px solid transparent;
+
+  backdrop-filter: blur(10px);
 }
-body {
-  margin: 0;
+
+/* =========================================
+NAV ICONS
+========================================= */
+
+#home {
+  height: 23px;
 }
+
+#bulb {
+  height: 25px;
+}
+
+#projects {
+  height: 21px;
+}
+
+#phone {
+  height: 21px;
+}
+
+.icon {
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.icon:hover {
+  color: #00f5d4;
+
+  transform: translateY(-4px);
+}
+
+/* =========================================
+HERO SECTION
+========================================= */
+
+.intro-section {
+  width: min(1200px, 90%);
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  gap: 70px;
+
+  padding-top: 90px;
+}
+
+/* =========================================
+HERO CONTENT
+========================================= */
+
+.content-parent {
+  width: 55%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding: 30px;
+}
+
+/* =========================================
+NAME
+========================================= */
 
 #name {
   color: white;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+
   font-size: 32px;
+  font-weight: 500;
+
+  line-height: 1.2;
 }
 
-#info {
-  color: white;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-  font-size: 24px;
-}
-
-#parent-nav {
-  height: 100vh;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  background-image: radial-gradient(rgb(91, 139, 167) 1px, transparent 1px);
-  background-size: 50px 50px;
-}
-
+/* =========================================
+MERN STACK TITLE
+========================================= */
 #title-info {
-  background: linear-gradient(135deg, #00f5d4, #5f2abd);
+  display: inline-block;
+
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 700;
+  line-height: 1.1;
+
+  background: linear-gradient(
+    135deg,
+    #00f5d4,
+    #5f2abd
+  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 62px;
-  display: inline-block;
-  overflow: hidden;
+
   white-space: nowrap;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-  width: 22ch;
-  border-right: 1px solid rgb(255, 255, 255);
+
+  border-right: 2px solid #00f5d4;
+
+  /* Don't change the element's actual width */
+  width: fit-content;
+
+  /* Reveal the text */
+  clip-path: inset(0 100% 0 0);
 
   animation:
-    typing 6s steps(22) infinite,
-    blinking 0.7s infinite;
+    typing 4s steps(21, end) infinite,
+    blinking 0.7s step-end infinite;
 }
 
-/* typing  */
 @keyframes typing {
   0% {
-    width: 0ch;
+    clip-path: inset(0 100% 0 0);
   }
 
-  30% {
-    width: 16ch;
+  45% {
+    clip-path: inset(0 0 0 0);
   }
+
   70% {
-    width: 16ch;
+    clip-path: inset(0 0 0 0);
   }
 
   100% {
-    width: 0ch;
+    clip-path: inset(0 100% 0 0);
   }
 }
 
-/* cursor */
 @keyframes blinking {
+  0%,
+  100% {
+    border-color: #00f5d4;
+  }
+
   50% {
     border-color: transparent;
   }
 }
 
-@media (max-width: 768px) {
-  @media (max-width: 768px) {
-    @keyframes typing {
-      0% {
-        width: 0ch;
-      }
+/* =========================================
+DESCRIPTION
+========================================= */
 
-      30% {
-        width: 16ch;
-      } /* 🔥 reduce this */
-      70% {
-        width: 16ch;
-      }
+#info {
+  color: rgba(255, 255, 255, 0.7);
 
-      100% {
-        width: 0ch;
-      }
-    }
-  }
+  font-size: 17px;
 
-  #title-info {
-    font-size: 27px;
-  }
+  line-height: 1.7;
 
-  #name {
-    font-size: 32px;
-  }
+  max-width: 600px;
 
-  #info {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 100%;
-    font-size: 15px;
-  }
+  margin: 0;
+}
 
-  #parent-nav {
-    height: fit-content;
-  }
+/* =========================================
+HERO BUTTONS
+========================================= */
 
-  .nav {
-    border: 1px solid rgb(255, 255, 255);
-    width: 60vw;
-  }
+.hero-buttons {
+  display: flex;
 
-  .parent-box {
-    width: 100%;
-  }
+  gap: 14px;
 
-  #name {
-    font-size: 50px;
-  }
+  margin-top: 8px;
+}
 
-  #github-a {
-    width: 30vw;
+.hero-btn {
+  padding: 11px 22px;
+
+  border-radius: 18px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+/* =========================================
+PRIMARY BUTTON
+========================================= */
+
+.primary-btn {
+  color: #000;
+
+  background: #00f5d4;
+
+  border: 1px solid #00f5d4;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================================
+SECONDARY BUTTON
+========================================= */
+
+.secondary-btn {
+  color: white;
+
+  background: transparent;
+
+  border: 1px solid #5f2abd;
+}
+
+.secondary-btn:hover {
+  color: white;
+
+  background: #5f2abd;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 10px #5f2abd,
+    0 0 25px rgba(0, 245, 212, 0.35);
+}
+
+/* =========================================
+SOCIAL LINKS
+========================================= */
+
+.social-links {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  margin-top: 5px;
+}
+
+.links-except-github {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+#insta,
+#linkedin,
+#twitter {
+  height: 35px;
+
+  padding: 5px;
+
+  color: #00f5d4;
+
+  border-radius: 7px;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+#insta:hover,
+#linkedin:hover,
+#twitter:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================================
+GITHUB
+========================================= */
+
+.github {
+  padding: 9px 24px;
+
+  border-radius: 18px;
+
+  background: #00f5d4;
+
+  border: 1px solid #00f5d4;
+
+  color: black;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.github:hover {
+  transform: translateY(-3px);
+}
+
+#github-a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: rgb(0, 0, 0);
+
+  text-decoration: none;
+
+  font-size: 17px;
+}
+
+#github-logo {
+  height: 25px;
+}
+
+/* =========================================
+LOTTIE
+========================================= */
+
+.animation-sec {
+  width: 45%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 30px;
+}
+
+.animation-sec > div {
+  width: 100%;
+
+  max-width: 500px;
+}
+
+/* =========================================
+TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .intro-section {
+    width: 94%;
+
+    gap: 40px;
   }
 
   .content-parent {
-    width: 100%;
+    width: 60%;
   }
+
+  .animation-sec {
+    width: 40%;
+  }
+
+  #name {
+    font-size: 28px;
+  }
+
+  #info {
+    font-size: 15px;
+  }
+}
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  #parent-nav {
+    min-height: 100vh;
+  }
+
+  /* NAVBAR */
+
+  .parent-box {
+    height: 80px;
+  }
+
+  .nav {
+    width: 60vw;
+
+    max-width: 270px;
+
+    height: 45px;
+  }
+
+  #home {
+    height: 21px;
+  }
+
+  #bulb {
+    height: 23px;
+  }
+
+  #projects {
+    height: 19px;
+  }
+
+  #phone {
+    height: 19px;
+  }
+
+  /* =====================================
+  HERO
+  ===================================== */
+
+  .intro-section {
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 100px 20px 50px;
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    gap: 0;
+  }
+
+  /* LEFT ALIGN EVERYTHING */
+
+  .content-parent {
+    width: 100%;
+
+    padding: 20px 5px;
+
+    align-items: flex-start;
+
+    text-align: left;
+
+    gap: 16px;
+  }
+
+  /* NAME */
+
+  #name {
+    font-size: 28px;
+
+    text-align: left;
+  }
+
+  /* =====================================
+  MERN TITLE
+  ===================================== */
+
+ 
+  /* DESCRIPTION */
+
+  #info {
+    width: 100%;
+
+    max-width: 500px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    text-align: left;
+  }
+
+  /* =====================================
+  BUTTON
+  ===================================== */
+
+  .hero-buttons {
+    justify-content: flex-start;
+
+    gap: 10px;
+
+    margin-top: 5px;
+
+    width: auto;
+  }
+
+  .hero-btn {
+    /*
+      IMPORTANT:
+      Removed flex: 1
+      so the button doesn't shrink.
+    */
+
+    flex: none;
+
+    width: auto;
+
+    min-width: 125px;
+
+    padding: 10px 17px;
+
+    font-size: 12px;
+  }
+
+  /* =====================================
+  SOCIALS
+  ===================================== */
+
+  .social-links {
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .links-except-github {
+    justify-content: flex-start;
+
+    gap: 8px;
+  }
+
+  #insta,
+  #linkedin,
+  #twitter {
+    height: 38px;
+  }
+
+  #github-a {
+    font-size: 14px;
+  }
+
+  #github-logo {
+    height: 22px;
+  }
+
+  .github {
+    padding: 8px 20px;
+  }
+
+  /* Hide computer animation */
+
   .animation-sec {
     display: none;
   }
 }
 
-@media (max-width: 1500px) {
-  .animation-sec {
-    display: none;
+/* =========================================
+SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+  .nav {
+    width: 70vw;
   }
 
-  
+  .intro-section {
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  .content-parent {
+    padding: 15px;
+  }
+
+  #name {
+    font-size: 25px;
+  }
+
+ #title-info {
+  font-size: 26px;
+
+  width: max-content;
+  max-width: none;
+
+  text-align: left;
+
+  animation:
+    typing-mobile 4s steps(21, end) infinite,
+    blinking 0.7s step-end infinite;
+}
+
+@keyframes typing-mobile {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  45% {
+    clip-path: inset(0 0 0 0);
+  }
+
+  70% {
+    clip-path: inset(0 0 0 0);
+  }
+
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+  #info {
+    font-size: 13px;
+  }
+
+  .hero-buttons {
+    width: auto;
+  }
+
+  .hero-btn {
+    flex: none;
+
+    width: auto;
+
+    min-width: 125px;
+
+    padding: 10px 12px;
+  }
+}
+
+/* =========================================
+VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 330px) {
+
+  #name {
+    font-size: 22px;
+  }
+
+  #title-info {
+    font-size: 23px;
+  }
+
+  #info {
+    font-size: 12px;
+  }
+
+  .nav {
+    width: 75vw;
+  }
+
+  .hero-btn {
+    min-width: 115px;
+
+    padding: 9px 10px;
+  }
 }
