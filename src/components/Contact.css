@@ -1,4 +1,4 @@
-#sec2 {
+#contact-sec2 {
   text-align: center;
 }
 
@@ -6,19 +6,19 @@ h3 {
   text-align: center;
 }
 
-.form-content {
+.contact-form-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 45px;
 }
 
-.intro-info {
+.contact-intro-info {
   display: flex;
   flex-direction: column;
 }
 
-.loader {
+.contact-loader {
   width: 20px;
   height: 20px;
   border: 3px solid rgba(0, 0, 0, 0.25);
@@ -26,16 +26,18 @@ h3 {
   border-radius: 50%;
   display: inline-block;
 
-  animation: spin 0.7s linear infinite;
+  animation: contact-spin 0.7s linear infinite;
 }
-.success-message {
+
+.contact-success-message {
   color: #22c55e;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
   margin: 10px 0 0;
 }
-@keyframes spin {
+
+@keyframes contact-spin {
   from {
     transform: rotate(0deg);
   }
@@ -45,7 +47,7 @@ h3 {
   }
 }
 
-#sec1 {
+#contact-sec1 {
   background: linear-gradient(135deg, #00f5d4, #5f2abd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -55,17 +57,17 @@ h3 {
   font-family: poppins-600;
 }
 
-#sec2 {
+#contact-sec2 {
   font-size: 24px;
   font-weight: 400;
   color: #9da4b0;
 }
 
-.login-page input {
+.contact-login-page input {
   width: 99%;
 }
 
-#name2 {
+#contact-name2 {
   background-color: #141820;
   border-radius: 5px;
   height: 5.3vh;
@@ -74,11 +76,11 @@ h3 {
   color: white;
 }
 
-#name2::placeholder {
+#contact-name2::placeholder {
   color: #aeb4bf;
 }
 
-#email {
+#contact-email {
   background-color: #141820;
   border-radius: 5px;
   height: 5.3vh;
@@ -87,11 +89,11 @@ h3 {
   color: white;
 }
 
-#email::placeholder {
+#contact-email::placeholder {
   color: #aeb4bf;
 }
 
-#message {
+#contact-message {
   color: white;
   background-color: #141820;
   height: 10vh;
@@ -100,33 +102,32 @@ h3 {
   border-radius: 5px;
 }
 
-#message::placeholder {
+#contact-message::placeholder {
   margin-bottom: 2vh;
   color: #aeb4bf;
 }
 
-#shoot {
+#contact-shoot {
   height: 6vh;
   font-size: 22px;
   background: #00f5d4;
   border: 1px solid #00f5d4;
- color: black;
+  color: black;
   transition: 0.4s ease;
   cursor: pointer;
   margin-top: 2vh;
 }
 
-#shoot:hover {
+#contact-shoot:hover {
   transform: scale(1.04);
-
 }
 
-.message-parent {
+.contact-message-parent {
   display: flex;
   flex-direction: column;
 }
 
-.seperation-2 {
+.contact-seperation-2 {
   border: 1px solid rgba(255, 255, 255, 0.08);
   width: 25.5vw;
   margin-top: 4vh;
@@ -162,17 +163,17 @@ h3 {
   color: white;
 }
 
-#error {
+#contact-error {
   color: #ff5c5c;
 }
 
-.parent-container {
+.contact-parent-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.login-page {
+.contact-login-page {
   display: flex;
   width: 40%;
   flex-direction: column;
@@ -181,7 +182,7 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .login-page {
+  .contact-login-page {
     width: 80%;
   }
 
@@ -189,23 +190,22 @@ h3 {
     width: 100%;
   }
 
-   #sec1 {
-       text-align: center;
+  #contact-sec1 {
+    text-align: center;
     font-size: 45px;
   }
 }
 
-
 @media (max-width: 450px) {
-  #sec1 {
+  #contact-sec1 {
     text-align: center;
     font-size: 48px;
   }
 }
 
 @media (max-width: 330px) {
-  #sec1 {
-       text-align: center;
+  #contact-sec1 {
+    text-align: center;
     font-size: 40px;
   }
 }
