@@ -1,0 +1,272 @@
+/* =========================
+   BUILDING SECTION
+========================= */
+
+.exploring-section {
+  width: 100%;
+  padding: 110px 0;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.exploring-heading {
+  max-width: 850px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.exploring-heading h1 {
+  margin: 0 0 20px;
+
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+}
+
+.exploring-heading p {
+  max-width: 700px;
+  margin: 0 auto;
+
+  color: #a1a1aa;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   CARDS GRID
+========================= */
+
+.exploring-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.exploring-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  padding: 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.exploring-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(139, 92, 246, 0.45);
+
+  background: rgba(139, 92, 246, 0.04);
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.exploring-icon {
+  min-width: 52px;
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+  border: 1px solid;
+
+  font-size: 26px;
+}
+
+.exploring-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+
+/* =========================
+   ICON COLORS
+========================= */
+
+.agentic-icon {
+  color: #8b5cf6;
+
+  border-color: rgba(139, 92, 246, 0.4);
+
+  background: rgba(139, 92, 246, 0.08);
+}
+
+
+.langgraph-icon {
+  color: #a855f7;
+
+  border-color: rgba(168, 85, 247, 0.4);
+
+  background: rgba(168, 85, 247, 0.08);
+}
+
+
+.multi-agent-icon {
+  color: #38bdf8;
+
+  border-color: rgba(56, 189, 248, 0.4);
+
+  background: rgba(56, 189, 248, 0.08);
+}
+
+
+.systems-icon {
+  color: #22c55e;
+
+  border-color: rgba(34, 197, 94, 0.4);
+
+  background: rgba(34, 197, 94, 0.08);
+}
+
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.exploring-card h2 {
+  margin: 2px 0 9px;
+
+  font-size: 19px;
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+.exploring-card p {
+  margin: 0;
+
+  color: #a1a1aa;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   RESPONSIVE — TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .exploring-section {
+    padding: 90px 0;
+  }
+
+  .exploring-grid {
+    padding: 0 20px;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE — MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .exploring-section {
+    padding: 80px 0;
+  }
+
+  .exploring-heading {
+    padding: 0 20px;
+    margin-bottom: 45px;
+  }
+
+  .exploring-heading h1 {
+    font-size: 36px;
+  }
+
+  .exploring-heading p {
+    font-size: 15px;
+  }
+
+  .exploring-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+  .exploring-section {
+    padding: 65px 0;
+  }
+
+  .exploring-heading {
+    padding: 0 15px;
+  }
+
+  .exploring-heading h1 {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  .exploring-heading p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .exploring-grid {
+    padding: 0 15px;
+    gap: 16px;
+  }
+
+  .exploring-card {
+    padding: 22px;
+    gap: 16px;
+  }
+
+  .exploring-icon {
+    min-width: 46px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .exploring-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .exploring-card h2 {
+    font-size: 17px;
+  }
+
+  .exploring-card p {
+    font-size: 13px;
+  }
+}

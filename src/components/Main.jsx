@@ -2,9 +2,7 @@ import React from "react";
 import "./Main.css";
 
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
+  FaPython,
   FaReact,
   FaNodeJs,
   FaGithub,
@@ -19,9 +17,16 @@ import {
   SiVercel,
   SiRender,
   SiPostman,
+  SiLangchain,
+  SiFastapi,
 } from "react-icons/si";
 
-import { TbApi } from "react-icons/tb";
+import {
+  TbApi,
+  TbTopologyStar3,
+  TbDatabase,
+} from "react-icons/tb";
+
 
 const Main = () => {
   return (
@@ -37,48 +42,7 @@ const Main = () => {
 
         <div className="components-parent">
 
-          {/* HTML */}
-          <div className="tech-item">
-            <div className="tech-icon html-circle">
-              <FaHtml5 />
-            </div>
-            <h2>HTML5</h2>
-          </div>
-
-
-          {/* CSS */}
-         <div className="tech-item">
-  <div className="tech-icon css-circle">
-    <svg viewBox="0 0 32 32">
-      <path
-        fill="#1572B6"
-        d="M5 3h22l-2 25-9 3-9-3L5 3z"
-      />
-
-      <path
-        fill="#33A9DC"
-        d="M16 6v22.5l7-2.3L24.5 6H16z"
-      />
-
-      <path
-        fill="#fff"
-        d="M9 9h14l-.4 3H12l.3 3h10l-.8 7.5-5.5 2-5.5-2-.4-4h3l.2 1.8 2.7.8 2.7-.8.3-2.3H9.8L9 9z"
-      />
-    </svg>
-  </div>
-
-  <h2>CSS3</h2>
-</div>
-
-
-          {/* JavaScript */}
-          <div className="tech-item">
-            <div className="tech-icon js-circle">
-              <FaJs />
-            </div>
-            <h2>JavaScript</h2>
-          </div>
-
+          {/* ================= FRONTEND ================= */}
 
           {/* React */}
           <div className="tech-item">
@@ -89,7 +53,9 @@ const Main = () => {
           </div>
 
 
-          {/* Node */}
+          {/* ================= BACKEND ================= */}
+
+          {/* Node.js */}
           <div className="tech-item">
             <div className="tech-icon node-circle">
               <FaNodeJs />
@@ -124,6 +90,116 @@ const Main = () => {
             <h2>Mongoose</h2>
           </div>
 
+
+          {/* Python */}
+          <div className="tech-item">
+            <div className="tech-icon python-circle">
+              <FaPython />
+            </div>
+            <h2>Python</h2>
+          </div>
+
+
+          {/* FastAPI */}
+          <div className="tech-item">
+            <div className="tech-icon fastapi-circle">
+              <SiFastapi />
+            </div>
+            <h2>FastAPI</h2>
+          </div>
+
+
+          {/* ================= AI / GENAI ================= */}
+
+         <div className="tech-item">
+  <div className="tech-icon rag-circle">
+    <svg
+      viewBox="0 0 48 48"
+      fill="none"
+      aria-hidden="true"
+    >
+      <circle
+        cx="24"
+        cy="24"
+        r="17"
+        stroke="currentColor"
+        strokeWidth="3"
+      />
+
+      <circle
+        cx="24"
+        cy="24"
+        r="7"
+        stroke="currentColor"
+        strokeWidth="3"
+      />
+
+      <circle
+        cx="24"
+        cy="7"
+        r="3"
+        fill="currentColor"
+      />
+
+      <circle
+        cx="9"
+        cy="32"
+        r="3"
+        fill="currentColor"
+      />
+
+      <circle
+        cx="39"
+        cy="32"
+        r="3"
+        fill="currentColor"
+      />
+
+      <text
+        x="24"
+        y="27"
+        textAnchor="middle"
+        fontSize="8"
+        fontWeight="700"
+        fill="currentColor"
+        fontFamily="Arial, sans-serif"
+      >
+        R
+      </text>
+    </svg>
+  </div>
+
+  <h2>RAG</h2>
+</div>
+
+          {/* LangChain */}
+          <div className="tech-item">
+            <div className="tech-icon langchain-circle">
+              <SiLangchain />
+            </div>
+            <h2>LangChain</h2>
+          </div>
+
+
+          {/* LangGraph */}
+          <div className="tech-item">
+            <div className="tech-icon langgraph-circle">
+              <TbTopologyStar3 />
+            </div>
+            <h2>LangGraph</h2>
+          </div>
+
+
+          {/* ChromaDB */}
+          <div className="tech-item">
+            <div className="tech-icon chroma-circle">
+              <TbDatabase />
+            </div>
+            <h2>ChromaDB</h2>
+          </div>
+
+
+          {/* ================= APIs / AUTH ================= */}
 
           {/* REST API */}
           <div className="tech-item">

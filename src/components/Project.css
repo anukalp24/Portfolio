@@ -35,7 +35,7 @@
 
 
 /* ========================================
-   PROJECT SECTION
+   PROJECT GRID
 ======================================== */
 
 .project-section {
@@ -46,6 +46,8 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 30px;
+
+  align-items: stretch;
 }
 
 
@@ -66,6 +68,9 @@
   border-radius: 20px;
 
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
 
   transition:
     transform 0.35s ease,
@@ -95,8 +100,11 @@
 
 .project-image-wrapper {
   width: 100%;
+
   overflow: hidden;
+
   border-radius: 14px;
+
   background: #111;
 }
 
@@ -131,23 +139,8 @@
 
   display: flex;
   flex-direction: column;
-}
 
-
-/* ========================================
-   PROJECT NUMBER
-======================================== */
-
-.project-number {
-  color: #00f5d4;
-
-  font-size: 12px;
-
-  font-weight: 600;
-
-  letter-spacing: 2px;
-
-  margin-bottom: 8px;
+  flex: 1;
 }
 
 
@@ -157,7 +150,9 @@
 
 .project-content h3 {
   color: white;
-text-align: start;
+
+  text-align: start;
+
   font-size: 30px;
 
   font-weight: 700;
@@ -197,7 +192,6 @@ text-align: start;
   margin-top: 20px;
 }
 
-
 .project-tech span {
   color: rgba(255, 255, 255, 0.75);
 
@@ -217,7 +211,6 @@ text-align: start;
     background 0.25s ease;
 }
 
-
 .project-tech span:hover {
   color: #00f5d4;
 
@@ -236,9 +229,15 @@ text-align: start;
 
   gap: 10px;
 
-  margin-top: 25px;
+  margin-top: auto;
+
+  padding-top: 25px;
 }
 
+
+/* ========================================
+   PROJECT BUTTON
+======================================== */
 
 .project-btn {
   display: inline-flex;
@@ -277,7 +276,6 @@ text-align: start;
   border: 1px solid #00f5d4;
 }
 
-
 .project-btn.primary:hover {
   transform: translateY(-2px);
 
@@ -297,7 +295,6 @@ text-align: start;
 
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 
 .project-btn.secondary:hover {
   transform: translateY(-2px);
@@ -326,7 +323,7 @@ text-align: start;
     gap: 30px;
   }
 
-   .project-image {
+  .project-image {
     width: 100%;
     height: auto;
   }
@@ -385,6 +382,7 @@ text-align: start;
 
   .project-image-wrapper {
     width: 100%;
+
     border-radius: 12px;
   }
 
@@ -393,6 +391,7 @@ text-align: start;
     height: auto;
 
     object-fit: contain;
+  }
 
 
   /* Content */
@@ -444,7 +443,9 @@ text-align: start;
   .project-buttons {
     gap: 8px;
 
-    margin-top: 20px;
+    margin-top: auto;
+
+    padding-top: 20px;
   }
 
 
@@ -453,9 +454,8 @@ text-align: start;
 
     font-size: 12px;
   }
+}
 
-}
-}
 
 /* ========================================
    SMALL PHONES
@@ -465,6 +465,7 @@ text-align: start;
 
   .projects {
     padding-left: 13px;
+
     padding-right: 13px;
   }
 
@@ -474,10 +475,12 @@ text-align: start;
   }
 
 
- .project-image {
+  .project-image {
     width: 100%;
+
     height: auto;
   }
+
 
   .project-content h3 {
     font-size: 22px;
@@ -491,11 +494,12 @@ text-align: start;
 
   .project-buttons {
     flex-direction: column;
+
+    width: 100%;
   }
 
 
   .project-btn {
     width: 100%;
   }
-
 }

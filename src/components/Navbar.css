@@ -28,6 +28,34 @@ body {
 MAIN HERO
 ========================================= */
 
+
+
+.resume-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 18px;
+
+  border: 1px dotted #ffffff;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.resume-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 #parent-nav {
   min-height: 100vh;
 

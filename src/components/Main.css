@@ -1,4 +1,6 @@
-
+/* =========================================================
+   MAIN
+========================================================= */
 
 #main {
   width: 100%;
@@ -7,6 +9,9 @@
 }
 
 
+/* =========================================================
+   INTRO / TECH STACK HEADING
+========================================================= */
 
 .intro {
   width: 100%;
@@ -17,20 +22,19 @@
 #tech-stack {
   color: white;
   text-align: center;
-
   font-size: clamp(28px, 4vw, 42px);
   font-weight: 700;
-
   margin: 0;
 }
 
 
-
+/* =========================================================
+   TECH STACK CONTAINER
+========================================================= */
 
 .components-parent {
   width: 85%;
   max-width: 1100px;
-
   margin: auto;
 
   display: flex;
@@ -38,12 +42,13 @@
   align-items: center;
 
   flex-wrap: wrap;
-
   gap: 30px;
 }
 
 
-
+/* =========================================================
+   TECH ITEM
+========================================================= */
 
 .tech-item {
   width: 70px;
@@ -58,6 +63,9 @@
 }
 
 
+/* =========================================================
+   TECH ICON
+========================================================= */
 
 .tech-icon {
   width: 50px;
@@ -84,53 +92,19 @@
 .tech-icon svg {
   width: 24px;
   height: 24px;
-
   display: block;
 }
 
 
-
-
-/* HTML */
-
-.html-circle {
-  color: #e44d26;
-
-  border: 1px solid #e44d26;
-
-  background: rgba(228, 77, 38, 0.08);
-}
-
-
-/* CSS */
-
-.css-circle {
-  color: #1572b6;
-
-  border: 1px solid #1572b6;
-
-  background: rgba(21, 114, 182, 0.08);
-}
-
-
-/* JavaScript */
-
-.js-circle {
-  color: #f7df1e;
-
-  border: 1px solid #f7df1e;
-
-  background: rgba(247, 223, 30, 0.08);
-}
-
+/* =========================================================
+   TECH COLORS
+========================================================= */
 
 /* React */
 
 .react-circle {
   color: #61dafb;
-
   border: 1px solid #61dafb;
-
   background: rgba(97, 218, 251, 0.08);
 }
 
@@ -139,9 +113,7 @@
 
 .node-circle {
   color: #68a063;
-
   border: 1px solid #68a063;
-
   background: rgba(104, 160, 99, 0.08);
 }
 
@@ -150,9 +122,7 @@
 
 .express-circle {
   color: white;
-
   border: 1px solid rgba(255, 255, 255, 0.5);
-
   background: rgba(255, 255, 255, 0.04);
 }
 
@@ -161,9 +131,7 @@
 
 .mongo-circle {
   color: #47a248;
-
   border: 1px solid #47a248;
-
   background: rgba(71, 162, 72, 0.08);
 }
 
@@ -172,10 +140,26 @@
 
 .mongoose-circle {
   color: #880000;
-
   border: 1px solid #880000;
-
   background: rgba(136, 0, 0, 0.08);
+}
+
+
+/* Python */
+
+.python-circle {
+  color: #3776ab;
+  border: 1px solid #3776ab;
+  background: rgba(55, 118, 171, 0.08);
+}
+
+
+/* FastAPI */
+
+.fastapi-circle {
+  color: #009688;
+  border: 1px solid #009688;
+  background: rgba(0, 150, 136, 0.08);
 }
 
 
@@ -183,9 +167,7 @@
 
 .api-circle {
   color: #00f5d4;
-
   border: 1px solid #00f5d4;
-
   background: rgba(0, 245, 212, 0.08);
 }
 
@@ -194,16 +176,81 @@
 
 .jwt-circle {
   color: #a855f7;
-
   border: 1px solid #a855f7;
-
   background: rgba(168, 85, 247, 0.08);
 }
 
 
+/* =========================================================
+   AI / GENAI
+========================================================= */
+
+/* RAG */
+
+.rag-circle {
+  color: #6c63ff;
+  border: 1px solid #6c63ff;
+  background: rgba(108, 99, 255, 0.08);
+}
+
+
+/* LangChain */
+
+.langchain-circle {
+  color: #1c9c72;
+  border: 1px solid #1c9c72;
+  background: rgba(28, 156, 114, 0.08);
+}
+
+
+/* LangGraph */
+
+.langgraph-circle {
+  color: #8b5cf6;
+  border: 1px solid #8b5cf6;
+  background: rgba(139, 92, 246, 0.08);
+}
+
+
+/* ChromaDB */
+
+.chroma-circle {
+  color: #ff6b35;
+  border: 1px solid #ff6b35;
+  background: rgba(255, 107, 53, 0.08);
+}
+
+
+/* =========================================================
+   AI ICON SIZING
+========================================================= */
+
+.rag-circle svg {
+  width: 27px;
+  height: 27px;
+}
+
+.langchain-circle svg {
+  width: 25px;
+  height: 25px;
+}
+
+.langgraph-circle svg {
+  width: 26px;
+  height: 26px;
+}
+
+.chroma-circle svg {
+  width: 27px;
+  height: 27px;
+}
+
+
+/* =========================================================
+   TECH ICON ANIMATION
+========================================================= */
 
 @keyframes rotateIcon {
-
   from {
     transform: rotate(0deg);
   }
@@ -211,11 +258,12 @@
   to {
     transform: rotate(360deg);
   }
-
 }
 
 
-
+/* =========================================================
+   TECH ICON HOVER
+========================================================= */
 
 .tech-icon:hover {
   animation-play-state: paused;
@@ -228,7 +276,9 @@
 }
 
 
-
+/* =========================================================
+   TECH NAME
+========================================================= */
 
 .tech-item h2 {
   color: white;
@@ -245,7 +295,9 @@
 }
 
 
-
+/* =========================================================
+   SEPARATOR
+========================================================= */
 
 .seperation {
   width: 85%;
@@ -257,13 +309,14 @@
 }
 
 
-
+/* =========================================================
+   TOOLS HEADING
+========================================================= */
 
 .name {
   width: 100%;
 
   margin-top: 30px;
-
   margin-bottom: 30px;
 }
 
@@ -280,9 +333,9 @@
 }
 
 
-/* ========================================
+/* =========================================================
    TOOLS CONTAINER
-======================================== */
+========================================================= */
 
 .tools-sec {
   width: 85%;
@@ -301,9 +354,9 @@
 }
 
 
-/* ========================================
+/* =========================================================
    TOOL CARDS
-======================================== */
+========================================================= */
 
 #tool-card1,
 #tool-card2,
@@ -324,9 +377,9 @@
 }
 
 
-/* ========================================
+/* =========================================================
    TOOL ICON
-======================================== */
+========================================================= */
 
 .tool-icon {
   width: 50px;
@@ -358,9 +411,9 @@
 }
 
 
-/* ========================================
+/* =========================================================
    TOOL COLORS
-======================================== */
+========================================================= */
 
 /* Git */
 
@@ -417,9 +470,9 @@
 }
 
 
-/* ========================================
+/* =========================================================
    TOOL HOVER
-======================================== */
+========================================================= */
 
 .tool-icon:hover {
   animation-play-state: paused;
@@ -432,9 +485,34 @@
 }
 
 
-/* ========================================
+/* =========================================================
+   TOOL SVG COLORS
+========================================================= */
+
+.git-icon svg {
+  color: #f05032;
+}
+
+.github-icon svg {
+  color: #ffffff;
+}
+
+.vercel-icon svg {
+  color: #ffffff;
+}
+
+.render-icon svg {
+  color: #46e3b7;
+}
+
+.postman-icon svg {
+  color: #ff6c37;
+}
+
+
+/* =========================================================
    TOOL NAME
-======================================== */
+========================================================= */
 
 #tool-card1 h2,
 #tool-card2 h2,
@@ -453,9 +531,9 @@
 }
 
 
-/* ========================================
+/* =========================================================
    TABLET
-======================================== */
+========================================================= */
 
 @media (max-width: 900px) {
 
@@ -465,22 +543,19 @@
 
   .components-parent {
     width: 90%;
-
     gap: 27px;
   }
 
   .tools-sec {
     width: 90%;
-
     gap: 27px;
   }
-
 }
 
 
-/* ========================================
+/* =========================================================
    MOBILE
-======================================== */
+========================================================= */
 
 @media (max-width: 768px) {
 
@@ -505,14 +580,12 @@
 
   .components-parent {
     width: 92%;
-
     gap: 25px;
   }
 
 
   .tech-item {
     width: 58px;
-
     gap: 7px;
   }
 
@@ -529,6 +602,29 @@
   }
 
 
+  /* AI icons */
+
+  .rag-circle svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .langchain-circle svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .langgraph-circle svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .chroma-circle svg {
+    width: 23px;
+    height: 23px;
+  }
+
+
   .tech-item h2 {
     font-size: 9px;
   }
@@ -538,7 +634,6 @@
 
   .seperation {
     width: 90%;
-
     margin-top: 55px;
   }
 
@@ -547,7 +642,6 @@
 
   .name {
     margin-top: 25px;
-
     margin-bottom: 25px;
   }
 
@@ -559,7 +653,6 @@
 
   .tools-sec {
     width: 92%;
-
     gap: 24px;
   }
 
@@ -570,7 +663,6 @@
   #tool-card4,
   #tool-card5 {
     width: 58px;
-
     gap: 7px;
   }
 
@@ -594,11 +686,12 @@
   #tool-card5 h2 {
     font-size: 9px;
   }
-
 }
 
 
-
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
 
 @media (max-width: 400px) {
 
@@ -624,6 +717,29 @@
   }
 
 
+  /* AI icons */
+
+  .rag-circle svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .langchain-circle svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .langgraph-circle svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .chroma-circle svg {
+    width: 21px;
+    height: 21px;
+  }
+
+
   .tech-item h2 {
     font-size: 8px;
   }
@@ -662,43 +778,50 @@
   #tool-card5 h2 {
     font-size: 8px;
   }
-
 }
 
 
-
+/* =========================================================
+   LARGE SCREENS
+========================================================= */
 
 @media (min-width: 1600px) {
 
   .form-content {
-    
     gap: 35px;
   }
+
 
   .login-page {
     width: 40%;
     max-width: 600px;
   }
 
+
   #sec1 {
     font-size: 72px;
   }
+
 
   #sec2 {
     font-size: 24px;
   }
 
+
   #contact-info {
     font-size: 17px;
   }
+
 
   #long-info {
     font-size: 20px;
   }
 
+
   #send {
     font-size: 36px;
   }
+
 
   #name2,
   #email {
@@ -706,15 +829,18 @@
     font-size: 15px;
   }
 
+
   #message {
     height: 120px;
     font-size: 15px;
   }
 
+
   #shoot {
     height: 55px;
     font-size: 20px;
   }
+
 
   .seperation-2 {
     width: 410px;

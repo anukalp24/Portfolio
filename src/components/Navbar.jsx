@@ -168,18 +168,17 @@ const Navbar = () => {
           </span>
 
 
-          <span id="title-info">
-            MERN Stack Developer
-          </span>
+       <span id="title-info">
+  Full-Stack Developer
+</span>
 
-
-          <p id="info">
-            MERN Stack Developer experienced in building responsive
-            full-stack applications using React, Node.js, Express.js,
-            and MongoDB. Focused on writing clean code and creating
-            scalable, user-focused web experiences.
-          </p>
-
+<p id="info">
+  Full-stack developer building end-to-end applications with the MERN
+  stack and AI-powered systems using Python, RAG, LangChain, LangGraph,
+  LLMs, and Agentic AI. Experienced in building production-ready web
+  applications and AI workflows, with a focus on turning ideas into
+  practical, scalable products.
+</p>
 
           {/* ================= BUTTONS ================= */}
 
@@ -337,9 +336,22 @@ const Navbar = () => {
                 </svg>
               </a>
 
+ <a
+    href="/Anukalp-Resume.pdf"
+    target="_blank"
+    rel="noreferrer"
+    className="resume-link"
+  >
+    Resume
+  </a>
+
+
             </div>
 
           </div>
+
+
+
 
         </div>
 
