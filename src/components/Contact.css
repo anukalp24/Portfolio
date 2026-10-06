@@ -48,10 +48,7 @@ h3 {
 }
 
 #contact-sec1 {
-  background: linear-gradient(135deg, #00f5d4, #5f2abd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+ 
   font-weight: 600;
   font-size: 72px;
   font-family: poppins-600;

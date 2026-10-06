@@ -111,7 +111,7 @@ const Project = () => {
              
 
               <a
-                href="YOUR_ASKMYPDF_GITHUB_LINK"
+                href="https://github.com/anukalp24/Askly"
                 className="project-btn secondary"
                 target="_blank"
                 rel="noreferrer"
